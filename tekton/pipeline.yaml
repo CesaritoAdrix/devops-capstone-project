@@ -78,6 +78,8 @@ spec:
       params:
       - name: IMAGE
         value: "$(params.build-image)"
+      - name: TLSVERIFY
+        value: "false"
       runAfter:
         - tests
         - lint
